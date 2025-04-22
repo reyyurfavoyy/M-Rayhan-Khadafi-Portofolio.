@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rayhan Khadafi Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1d3557] text-[#f1faee] font-sans">
+
+  <!-- Navbar -->
+  <header class="relative">
+    <nav class="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 w-[80%] px-6 py-3 
+    rounded-full bg-gradient-to-b from-white/20 to-white/5 border border-white/30 
+    backdrop-blur-md shadow-lg">
+ <ul class="flex justify-center gap-12 items-center text-white text-lg font-medium">
+   <li><a href="#home" class="hover:text-gray-300 transition-colors">Home</a></li>
+   <li><a href="#skills" class="hover:text-gray-300 transition-colors">Skills</a></li>
+   <li><a href="#project" class="hover:text-gray-300 transition-colors">Project</a></li>
+   <li><a href="#contact" class="hover:text-gray-300 transition-colors">Contact</a></li>
+ </ul>
+</nav>
+    <h1 class="text-center text-4xl font-bold mt-32">KHADAFI</h1>
+    <div class="flex justify-center mt-4 space-x-4">
+      <a href="http://wa.me/6285171728902"><img src="whatsapp.png" alt="WhatsApp" class="w-5"/></a>
+      <a href="https://www.instagram.com/mhmmd.kdfi__/?__pwa=1"><img src="instagram.png" alt="Instagram" class="w-5"/></a>
+      <a href="https://github.com/reyyurfavoyy"><img src="github.png" alt="Github" class="w-5"/></a>
+    </div>
+  </header>
+
+  <!-- Hero / Intro -->
+  <section id="home" class="flex flex-col lg:flex-row justify-between items-center bg-[#457b9d] rounded-[50px] p-10 gap-10 mb-16">
+    <div class="text-center lg:text-left max-w-xl">
+      <h3 class="text-2xl font-semibold mb-4">I'm M Rayhan Khadafi</h3>
+      <p class="text-lg leading-relaxed">
+        My Birth date is 19 July 2009, i want to be programing, web design. that way i take a PPLG on Smk Taruna Bhakti, i have much friend but there are 3 people with me since i was grade school i wish we can still being good friends until the end
+      </p>
+    </div>
+    <div class="w-[250px] h-[300px] rounded-[15%] ml-8 hover:scale-110 transition-transform">
+      <img src="green_soldier-removebg-preview.png" alt="green-soldier" class="w-[150px]"/>
+    </div>
+  </section>
+
+<!-- About -->
+<section class="flex flex-col lg:flex-row justify-between items-center bg-[#457b9d] rounded-[50px] p-10 gap-10 mb-16">
+  <div>
+    <img src="dapi2.png" alt="foto-dapi" class="w-[250px] h-[300px] rounded-[15%] ml-8 hover:scale-110 transition-transform"/>
+  </div>
+  <div class="max-w-xl text-center lg:text-left">
+    <h2 class="text-3xl font-bold mb-4 text-white">About Me!</h2>
+    <p class="text-lg leading-relaxed text-white mb-6">
+      I am the second child of three siblings, I love red color, my hobby is futsal, and I love automotive. I live on Jalan Gunung Tidar IV Blok D39/13. I hope I can be a good programmer, and though I'm confused about this task, I know the path I take will not be as smooth as I want.
+    </p>
+    <div class="flex justify-center lg:justify-start">
+      <button onclick="confirmDownload()" class="bg-[#1b3358] hover:bg-[#152943] text-white font-semibold py-2 px-6 rounded-md transition">
+        Download CV
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  function confirmDownload() {
+    const confirmed = confirm("Do you want to download the CV?");
+    if (confirmed) {
+      // Ganti 'cv.pdf' dengan path file CV kamu
+      const link = document.createElement("a");
+      link.href = "cv.pdf";
+      link.download = "cv.pdf";
+      link.click();
+    }
+  }
+</script>
+
+
+
+  <section id="skills" class="bg-[#3e7ca4] rounded-[60px] mx-auto mt-24 px-10 py-16 max-w-7xl text-white text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+      <div class="flex flex-col items-center bg-[#1b3358] p-4 rounded-xl shadow-md w-full transition-transform transform hover:scale-110 hover:bg-[#152943]">
+        <img src="html.png" alt="HTML" class="w-16 h-16 mb-2">
+        <span class="font-semibold mt-2">HTML</span>
+      </div>
+      <div class="flex flex-col items-center bg-[#1b3358] p-4 rounded-xl shadow-md w-full transition-transform transform hover:scale-110 hover:bg-[#152943]">
+        <img src="css-3.png" alt="CSS" class="w-16 h-16 mb-2">
+        <span class="font-semibold mt-2">CSS</span>
+      </div>
+      <div class="flex flex-col items-center bg-[#1b3358] p-4 rounded-xl shadow-md w-full transition-transform transform hover:scale-110 hover:bg-[#152943]">
+        <img src="photoshop.png" alt="Tailwind" class="w-16 h-16 mb-2">
+        <span class="font-semibold mt-2">Tailwind</span>
+      </div>
+      <div class="flex flex-col items-center bg-[#1b3358] p-4 rounded-xl shadow-md w-full transition-transform transform hover:scale-110 hover:bg-[#152943]">
+        <img src="java.png" alt="JavaScript" class="w-16 h-16 mb-2">
+        <span class="font-semibold mt-2">JavaScript</span>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section id="project" class="bg-[#3e7ca4] rounded-[60px] mx-auto mt-24 px-10 py-16 max-w-7xl text-white">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Project Card 1 -->
+      <div class="bg-[#1b3358] p-4 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:bg-[#152943]">
+        <img src="kuurarama project.png" alt="Project 1" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">My Portfolio</h3>
+        <p>A personal website built with HTML & Tailwind CSS</p>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="bg-[#1b3358] p-4 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:bg-[#152943]">
+        <img src="mikey asset.png" alt="Project 2" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Landing Page</h3>
+        <p>Landing page for Heart of Hope donation campaign</p>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="bg-[#1b3358] p-4 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:bg-[#152943]">
+        <img src="whatsapp design.png" alt="Project 3" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">To-Do App</h3>
+        <p>Simple to-do list with JavaScript & local storage</p>
+      </div>  
+    </div>
+  </section>
+  
+
+  
+  <section id="contact" class="bg-[#3e7ca4] rounded-[60px] mx-auto mt-24 px-4 py-16 max-w-xl text-white">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Contact Me</h2>
+    <form class="flex flex-col gap-6">
+      <input type="text" placeholder="Your Name" class="px-4 py-3 rounded-md bg-white/20 text-white placeholder-white focus:outline-none">
+      <input type="email" placeholder="Your Email" class="px-4 py-3 rounded-md bg-white/20 text-white placeholder-white focus:outline-none">
+      <textarea rows="5" placeholder="Your Message" class="px-4 py-3 rounded-md bg-white/20 text-white placeholder-white focus:outline-none"></textarea>
+      <button type="submit" class="bg-[#1b3358] py-3 rounded-md font-semibold hover:bg-[#152943] transition">Send</button>
+    </form>
+  </section>
+
+  
+  <footer class="bg-[#1b3358] text-white text-center py-6 mt-24 rounded-t-[60px]">
+    <p>&copy; 2025 M Rayhan Khadafi. All rights reserved.</p>
+  </footer>
+  
